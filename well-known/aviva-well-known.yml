@@ -1,0 +1,11 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of avivacredito.com discovery surface
+host: https://avivacredito.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /llms.txt
+  status: 200
+  file: ../llms/aviva-llms.txt
+  note: AllInOneSEO-generated site index; saved verbatim as LLMsTxt artifact

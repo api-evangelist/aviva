@@ -1,7 +1,32 @@
 aid: aviva
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aviva.png
 name: Aviva
-description: Aviva is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Aviva (Aviva Financial, S.A. de C.V., SOFOM E.N.R.) is a Mexican fintech
+  lender operating under the tagline "Tu historia importa." It offers quick,
+  secured personal and business loans originated in person through a network of
+  100+ physical kiosks across central Mexico (Puebla, Hidalgo, Estado de Mexico,
+  Morelos, Queretaro, Tlaxcala and Veracruz), using a video-call onboarding flow
+  (the Aviva Onboarding System, AOS) with same-day or 24-hour direct-deposit
+  disbursement. Products include Aviva Contigo (everyday expenses, up to
+  $15,000), Aviva tu Negocio (business owners, up to $20,000), Aviva tu Compra
+  (appliances at Bodega Aurrera), and Aviva tu Casa (construction materials via
+  Construrama). Borrowers manage payments through the Aviva mobile app. Aviva was
+  surfaced as a 500 Global portfolio company and added to the API Evangelist
+  network. As of this enrichment pass Aviva publishes no public developer
+  portal, API, SDKs, or OpenAPI - it exposes a consumer web/app and kiosk
+  surface only.
 url: https://raw.githubusercontent.com/api-evangelist/aviva/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +36,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Financial Services
+- Fintech
+- Lending
+- Consumer Credit
+- Loans
+- SOFOM
+- Mexico
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +55,18 @@ maintainers:
 common:
 - type: Website
   url: https://avivacredito.com
+- type: TermsOfService
+  url: https://www.avivacredito.com/terminos-y-condiciones
+- type: PrivacyPolicy
+  url: https://www.avivacredito.com/aviso-de-privacidad
+- type: Support
+  url: https://www.avivacredito.com/une/
+- type: LLMsTxt
+  url: llms/aviva-llms.txt
+- type: DomainSecurity
+  url: security/aviva-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
